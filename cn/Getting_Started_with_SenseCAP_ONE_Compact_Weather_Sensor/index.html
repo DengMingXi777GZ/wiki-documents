@@ -1,4 +1,4 @@
-<!doctype html><html lang=en-US dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-zh-CN/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/cn_Tutorials-Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor" data-has-hydrated=false><meta charset=UTF-8><meta name=generator content="Docusaurus v3.8.1"><title data-rh=true>SenseCAP ONE 紧凑型气象传感器入门指南 | Seeed Studio Wiki</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"><meta data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true property=og:url content=https://wiki.seeedstudio.com/cn/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor/><meta data-rh=true property=og:locale content=en_US><meta data-rh=true name=docusaurus_locale content=en><meta data-rh=true name=docsearch:language content=en><meta data-rh=true name=docusaurus_version content=current><meta data-rh=true name=docusaurus_tag content=docs-default-current><meta data-rh=true name=docsearch:version content=current><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current><meta data-rh=true property=og:title content="SenseCAP ONE 紧凑型气象传感器入门指南 | Seeed Studio Wiki"><meta data-rh=true name=description content="SenseCAP ONE 紧凑型气象传感器入门指南"><meta data-rh=true property=og:description content="SenseCAP ONE 紧凑型气象传感器入门指南"><meta data-rh=true name=keywords content=SenseCAP><meta data-rh=true property=og:image content=https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png><meta data-rh=true name=twitter:image content=https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png><link data-rh=true rel=icon href=/img/S.png><link data-rh=true rel=canonical href=https://wiki.seeedstudio.com/cn/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor/><link data-rh=true rel=alternate href=https://wiki.seeedstudio.com/cn/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor/ hreflang=en-US><link data-rh=true rel=alternate href=https://wiki.seeedstudio.com/cn/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor/ hreflang=x-default><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://wiki.seeedstudio.com/cn/SenseCAP_introduction","name":"SenseCAP","position":1},{"@type":"ListItem","item":"https://wiki.seeedstudio.com/cn/SenseCAP_Sensor_Intro","name":"SenseCAP 传感器","position":2},{"@type":"ListItem","item":"https://wiki.seeedstudio.com/cn/SenseCAP_ONE_weather_sensor","name":" SenseCAP ONE 气象传感器","position":3},{"@type":"ListItem","item":"https://wiki.seeedstudio.com/cn/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor","name":"SenseCAP ONE 紧凑型气象传感器入门指南","position":4}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Seeed Studio Wiki RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Seeed Studio Wiki Atom Feed"><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-M4JG2HVB")</script><link rel=search type=application/opensearchdescription+xml title="Seeed Studio Wiki" href=/opensearch.xml><script src=https://viewer.altium.com/client/static/js/embed.js async></script><script src=/js/custom.js async></script><script src=/js/language-switcher.js async></script><link rel=stylesheet href=/assets/css/styles.58087d77.css><script src=/assets/js/runtime~main.69ecbca9.js defer></script><script src=/assets/js/main.bc9bcd59.js defer></script><body class=navigation-with-keyboard><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4JG2HVB" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript>
+<!doctype html><html lang=en-US dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-zh-CN/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/cn_Tutorials-Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor" data-has-hydrated=false><meta charset=UTF-8><meta name=generator content="Docusaurus v3.8.1"><title data-rh=true>SenseCAP ONE 紧凑型气象传感器入门指南 | Seeed Studio Wiki</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"><meta data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true property=og:url content=https://wiki.seeedstudio.com/cn/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor/><meta data-rh=true property=og:locale content=en_US><meta data-rh=true name=docusaurus_locale content=en><meta data-rh=true name=docsearch:language content=en><meta data-rh=true name=docusaurus_version content=current><meta data-rh=true name=docusaurus_tag content=docs-default-current><meta data-rh=true name=docsearch:version content=current><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current><meta data-rh=true property=og:title content="SenseCAP ONE 紧凑型气象传感器入门指南 | Seeed Studio Wiki"><meta data-rh=true name=description content="SenseCAP ONE 紧凑型气象传感器入门指南"><meta data-rh=true property=og:description content="SenseCAP ONE 紧凑型气象传感器入门指南"><meta data-rh=true name=keywords content=SenseCAP><meta data-rh=true property=og:image content=https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png><meta data-rh=true name=twitter:image content=https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png><link data-rh=true rel=icon href=/img/S.png><link data-rh=true rel=canonical href=https://wiki.seeedstudio.com/cn/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor/><link data-rh=true rel=alternate href=https://wiki.seeedstudio.com/cn/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor/ hreflang=en-US><link data-rh=true rel=alternate href=https://wiki.seeedstudio.com/cn/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor/ hreflang=x-default><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://wiki.seeedstudio.com/cn/SenseCAP_introduction","name":"SenseCAP","position":1},{"@type":"ListItem","item":"https://wiki.seeedstudio.com/cn/SenseCAP_Sensor_Intro","name":"SenseCAP 传感器","position":2},{"@type":"ListItem","item":"https://wiki.seeedstudio.com/cn/SenseCAP_ONE_weather_sensor","name":" SenseCAP ONE 气象传感器","position":3},{"@type":"ListItem","item":"https://wiki.seeedstudio.com/cn/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor","name":"SenseCAP ONE 紧凑型气象传感器入门指南","position":4}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Seeed Studio Wiki RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Seeed Studio Wiki Atom Feed"><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-M4JG2HVB")</script><link rel=search type=application/opensearchdescription+xml title="Seeed Studio Wiki" href=/opensearch.xml><script src=https://viewer.altium.com/client/static/js/embed.js async></script><script src=/js/custom.js async></script><script src=/js/language-switcher.js async></script><link rel=stylesheet href=/assets/css/styles.58087d77.css><script src=/assets/js/runtime~main.3220508e.js defer></script><script src=/assets/js/main.2249285d.js defer></script><body class=navigation-with-keyboard><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4JG2HVB" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript>
 
 
 <svg xmlns=http://www.w3.org/2000/svg style="display: none;"><defs>
@@ -18,7 +18,7 @@
 <p>USB Type-C 接口允许您使用普通的 USB Type-C 线缆将计算机连接到设备进行配置。</p>
 </li>
 <li>
-<p>主数据接口可以连接到 M12 8 针线缆，支持多种总线协议</p>
+<p>主数据接口可连接 M12 8 针线缆，支持多种总线协议</p>
 </li>
 </ul>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image4.png></div>
@@ -27,36 +27,36 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=m12-线缆>M12 线缆<a href=#m12-线缆 class=hash-link aria-label="Direct link to M12 线缆" title="Direct link to M12 线缆">​</a></h3>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image6.png></div>
 <p>设备采用 M12 8 针连接器，不同颜色的引脚提供电源和数据通信（如上图所示）。</p>
-<p>当使用 RS-485 时，您只需连接 4 根线（不使用加热功能），其余线缆可以单独用胶带包裹以防止短路</p>
+<p>使用 RS-485 时，您只需连接 4 根线（不使用加热功能），其余线缆可单独用胶带包裹以防止短路</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image7.png></div>
-<p>插入线缆时，线缆的孔和设备连接器的引脚必须对齐。</p>
+<p>插入线缆时，线缆的孔位必须与设备连接器的引脚对齐。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image8.png></div>
 <p>插入线缆并顺时针拧紧</p>
 <p>注意：插入底部之前，线缆应对准底部。否则，引脚偏斜可能导致通信异常。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image9.png></div>
-<p>当使用带有加热功能的设备时，需要单独的 24V 电源（建议使用 24V@1A）。灰色线 5 连接到电源的负极，粉色线 6 连接到电源的正极。</p>
+<p>使用带加热功能的设备时，需要单独的 24V 电源（推荐 24V@1A）。灰色线 5 连接电源负极，粉色线 6 连接电源正极。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image10.png></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=安装设备>安装设备<a href=#安装设备 class=hash-link aria-label="Direct link to 安装设备" title="Direct link to 安装设备">​</a></h3>
-<p>有两种主要的安装方法，要么用套筒安装在杆子上，要么用法兰盘安装在平台上。</p>
+<p>有两种主要的安装方法，可以使用套筒安装在杆上，或使用法兰盘安装在平台上。</p>
 <div align=center><img width=300 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image11.png></div>
 <p>套筒的尺寸如下所示。</p>
 <div align=center><img width=300 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image12.png></div>
-<p>建议杆子的直径应小于或等于 75cm。</p>
+<p>建议杆的直径应小于或等于 75cm。</p>
 <div align=center><img width=300 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image13.png></div>
 <p>法兰盘的尺寸如下所示。</p>
 <div align=center><img width=300 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image14.png></div>
 <blockquote>
-<p>注意：为获得尽可能准确的风向数据，请在安装时确保设备的物理北向，将底座上的<strong>箭头</strong>准确指向真北。否则，请在配置过程中启用电子罗盘。</p>
+<p>注意：为了获得尽可能准确的风向数据，请在安装时确保物理北向定位，将底座上的<strong>箭头</strong>直接指向真北。否则，请在配置期间启用电子罗盘。</p>
 </blockquote>
-<h1>设备的工作模式</h1>
-<p>安装完成后，您可以给设备上电，配置设备并从设备收集数据。</p>
+<h1>设备工作模式</h1>
+<p>安装后，您可以为设备通电、配置设备并从设备收集数据。</p>
 <p>设备有两种工作模式，<strong>配置模式和工作模式。</strong></p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image15.png></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=通过-usb-端口配置设备>通过 USB 端口配置设备<a href=#通过-usb-端口配置设备 class=hash-link aria-label="Direct link to 通过 USB 端口配置设备" title="Direct link to 通过 USB 端口配置设备">​</a></h3>
-<p>设备底部有一个防水圆形盖子。逆时针转动以取下这个盖子，您可以看到一个 USB Type-C 连接器和一个配置按钮。</p>
-<p>使用 USB Type-C 线缆将设备连接到您的计算机。计算机将自动安装设备驱动程序。驱动程序成功安装后，您可以在设备管理器中看到一个串口。</p>
+<p>设备底部有一个防水圆形盖子。逆时针转动以取下此盖子，您可以看到一个 USB Type-C 连接器和一个配置按钮。</p>
+<p>使用 USB Type-C 线缆将设备连接到计算机。计算机将自动安装设备驱动程序。驱动程序成功安装后，您可以在设备管理器中看到一个串口。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image16.png></div>
-<p>如果驱动程序没有自动安装，请点击此链接<a href=https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers target=_blank rel="noopener noreferrer">手动下载</a>并<a href=https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers target=_blank rel="noopener noreferrer">安装</a><a href=https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers target=_blank rel="noopener noreferrer">驱动程序</a>。（版本是 CP210x Windows Drivers）</p>
+<p>如果驱动程序未自动安装，请点击此链接<a href=https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers target=_blank rel="noopener noreferrer">手动下载</a>并<a href=https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers target=_blank rel="noopener noreferrer">安装</a><a href=https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers target=_blank rel="noopener noreferrer">驱动程序</a>。（版本为 CP210x Windows Drivers）</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image17.png></div>
 <p><strong>有两种方法配置设备：</strong></p>
 <ul>
@@ -70,13 +70,13 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=sensecap-one-配置工具>SenseCAP ONE 配置工具<a href=#sensecap-one-配置工具 class=hash-link aria-label="Direct link to SenseCAP ONE 配置工具" title="Direct link to SenseCAP ONE 配置工具">​</a></h3>
 <p>SenseCAP ONE 配置工具为您提供图形界面来配置设备。您可以从下面的 GitHub 链接下载该工具：</p>
 <p>&lt;<a href=https://github.com/Seeed-Solution/SenseCAP-One-Configuration-Tool/releases target=_blank rel="noopener noreferrer">https://github.com/Seeed-Solution/SenseCAP-One-Configuration-Tool/releases</a>></p>
-<p>根据您的需要，为相应的操作系统选择软件，Windows、macOS 或 Linux。</p>
+<p>根据您的需要，选择相应操作系统的软件，Windows、macOS 或 Linux。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image18.png></div>
 <p>下图显示了 SenseCAP ONE 配置工具的主界面。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image19.png></div>
 <ol>
 <li>
-<p>打开软件，点击串口的下拉框，选择设备对应的串口。</p>
+<p>打开软件，点击串口处的下拉框，选择设备对应的串口。</p>
 </li>
 <li>
 <p>将波特率设置为 9600。</p>
@@ -86,33 +86,87 @@
 </li>
 </ol>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image20.png></div>
-<p>点击 Settings 进入设备设置，点击"Read From Device"获取设备信息。</p>
+<p>点击 Settings 进入设备设置，点击 "Read From Device" 获取设备信息。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image21.png></div>
 <ol>
-<li>选择通信协议。在这个例子中我们选择 RS-485 Modbus RTU。</li>
+<li>选择通信协议。在此示例中，我们选择 RS-485 Modbus RTU。</li>
 </ol>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image22.png></div>
 <ol start=2>
-<li>修改 Modbus 地址：在 Modbus 地址中写入地址，然后点击"Write to Device"。</li>
+<li>修改 Modbus 地址：在 Modbus 地址中写入地址，然后点击 "Write to Device"。</li>
 </ol>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image23.png></div>
-<p>在配置页面，您可以修改以下内容：设备名称、数据类型和数据上传间隔。任何修改后，您都需要点击"Write to Device"使更改生效。</p>
-<p>在应用设置中，您可以设置工具读取传感器数据的周期，最小为 2S，以及曲线的点范围。</p>
+<p>在配置页面，您可以修改以下内容：设备名称、数据类型和数据上传间隔。任何修改后，您都需要点击 "Write to Device" 使更改生效。</p>
+<p>在应用程序设置中，您可以设置工具读取传感器数据的周期，最小为 2S，以及曲线的点范围。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image24.png></div>
-<p>点击"Firmware Update"更新设备固件。请联系销售或技术支持 (<a href=mailto:sensecap@seeed.cc target=_blank rel="noopener noreferrer">sensecap@seeed.cc</a>) 获取固件。</p>
+<p>点击 "Firmware Update" 更新设备固件。请联系销售或技术支持 (<a href=mailto:sensecap@seeed.cc target=_blank rel="noopener noreferrer">sensecap@seeed.cc</a>) 获取固件。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image25.png></div>
-<p>在升级页面，您需要选择更新主板固件或驱动板固件。在本地存储库中选择固件文件，然后点击"Update Now"。如果在更新过程中出现意外断电，更新将不会执行。您需要重复相同的过程来更新固件。</p>
+<p>在升级页面，您需要选择更新主板固件或驱动板固件。在本地存储库中选择固件文件，然后点击 "Update Now"。如果在更新过程中发生意外断电，更新将不会执行。您需要重复相同的过程来更新固件。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image26.png></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id=固件升级>固件升级<a href=#固件升级 class=hash-link aria-label="Direct link to 固件升级" title="Direct link to 固件升级">​</a></h4>
+<ol>
+<li>打开 <code>SenseCAP One Configuration Tool</code></li>
+</ol>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/SenseCAP_One_Configuration_Tool.png></div>
+<ol start=2>
+<li>
+<p>通过 Type-C 线缆将设备连接到计算机</p>
+</li>
+<li>
+<p>打开软件，为设备选择正确的 <code>COM</code> 端口，然后点击 <code>"Connect"</code></p>
+</li>
+</ol>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/Connect.png></div>
+<ol start=4>
+<li>连接后，点击 <code>"Firmware Update"</code></li>
+</ol>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/Firmware_Update.png></div>
+<ol start=5>
+<li>选择目标板和相应的固件文件</li>
+</ol>
+<ul>
+<li>选择 <code>Master board</code></li>
+</ul>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/Master_board.png></div>
+<ul>
+<li>
+<p>点击 <code>"Local File"</code> 并浏览到固件文件夹</p>
+</li>
+<li>
+<p>点击 <code>"Update"</code></p>
+</li>
+</ul>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/Update.png></div>
+<ol start=6>
+<li>点击 <code>"Update"</code> 后，按下设备上的复位按钮（位于 Type-C 端口旁边）。</li>
+</ol>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/Reset.png></div>
+<p>按下按钮几秒钟后，更新过程将开始。</p>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/Update2.png></div>
+<ol start=7>
+<li>更新完成后，再次按下复位按钮，然后点击屏幕上的 <code>"OK"</code>。</li>
+</ol>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/Reset2.png></div>
+<ol start=8>
+<li>
+<p>重复上述步骤，将另一个固件刷入 <code>Slave Board 1</code>。</p>
+</li>
+<li>
+<p>完成后关闭固件更新窗口，点击 <code>"Disconnect"</code>。</p>
+</li>
+</ol>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/Disconnect.png></div>
+<p>这样就完成了气象站的所有固件升级步骤。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=串口调试工具>串口调试工具<a href=#串口调试工具 class=hash-link aria-label="Direct link to 串口调试工具" title="Direct link to 串口调试工具">​</a></h3>
 <p>通信设置如下：</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image27.png></div>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image28.png></div>
 <ul>
 <li>
-<p>在串口调试助手中，选择相应的 COM 端口。</p>
+<p>在串口调试助手中，选择对应的 COM 端口。</p>
 </li>
 <li>
-<p>勾选"click Enter to start a new line"复选框。</p>
+<p>勾选 "click Enter to start a new line" 复选框。</p>
 </li>
 <li>
 <p>将波特率设置为 9,600。</p>
@@ -121,7 +175,7 @@
 <p>在发送区域发送。</p>
 </li>
 <li>
-<p>如果您在串口接收窗口中收到相应的 0XA 消息，则配置成功。如果没有，请检查 COM 端口和波特率。</p>
+<p>如果在串口接收窗口中收到相应的 0XA 消息，则配置成功。如果没有，请检查 COM 端口和波特率。</p>
 </li>
 </ul>
 <p>请在下一章查看详细的 ASIIC 命令。</p>
@@ -131,10 +185,10 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id=modbus-rtu-协议>Modbus-RTU 协议<a href=#modbus-rtu-协议 class=hash-link aria-label="Direct link to Modbus-RTU 协议" title="Direct link to Modbus-RTU 协议">​</a></h2>
 <p><strong>协议通信参数</strong></p>
 <div align=center><img width={800} src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/DefaultDeviceAddress.png></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id=modbus-rtu-协议消息格式>Modbus-RTU 协议消息格式<a href=#modbus-rtu-协议消息格式 class=hash-link aria-label="Direct link to Modbus-RTU 协议消息格式" title="Direct link to Modbus-RTU 协议消息格式">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=modbus-rtu-协议消息��格式>Modbus-RTU 协议消息格式<a href=#modbus-rtu-协议消息格式 class=hash-link aria-label="Direct link to Modbus-RTU 协议消息格式" title="Direct link to Modbus-RTU 协议消息格式">​</a></h3>
 <p>传感器数据存储在输入寄存器中，为只读。</p>
-<p>RS-485 的设备地址和通信波特率存储在保持寄存器中，可以修改。</p>
-<p>每个寄存器为 16 位，占用 2 个字节。</p>
+<p>设备地址和 RS-485 的通信波特率存储在保持寄存器中，可以修改。</p>
+<p>每个寄存器为 16 位，占用 2 字节。</p>
 <p><strong>从输入寄存器读取消息。</strong></p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image32.png></div>
 <p><strong>读取和写入保持寄存器。</strong></p>
@@ -148,10 +202,10 @@
 <p>配置连接参数：波特率 9600bps，8 数据位，
 无奇偶校验，1 停止位。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image36.png></div>
-<p>读取空气温度寄存器 0x0000 到 0x0001，点击 Setup，并选择 Read/Write Definition</p>
+<p>读取空气温度寄存器 0x0000 到 0x0001，点击 Setup，选择 Read/Write Definition</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image37.png></div>
-<p>设置默认从机 ID（5-in-1 是 10，7-in-1 是 20，9-in-1 是 38），功能码 04，起始地址 0，数量（5-in-1 是 6，7-in-1 是
-28，9-in-1 是 32）；</p>
+<p>设置默认从机 ID（5-in-1 为 10，7-in-1 为 20，9-in-1 为 38），功能码 04，起始地址 0，数量（5-in-1 为 6，7-in-1 为
+28，9-in-1 为 32）；</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image38.png></div>
 <p>现在计算机每 1 秒读取一次传感器数据，测量值（第 0 行和第 1 行）如下图所示，将测量值除以 1000 后，即为真实温度值，28300/1000 = 28.3 °C</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image39.png></div>
@@ -181,10 +235,10 @@
 <p>返回温度数据 FFFFFC18H（十六进制补码）。</p>
 </li>
 <li>
-<p>原码是 - (FF FF FC 18-1 = FF FF FC 17) = 80 00 03 E8（十六进制）= -1000（十进制）。</p>
+<p>原码为 - (FF FF FC 18-1 = FF FF FC 17) = 80 00 03 E8（十六进制）= -1000（十进制）。</p>
 </li>
 <li>
-<p>然后温度测量值是 -1000/1000 = -1°</p>
+<p>然后温度测量值为 -1000/1000 = -1°</p>
 </li>
 </ol>
 <p><strong>S500 解码</strong></p>
@@ -218,7 +272,7 @@
 <p>发送命令：2B 04 00 40 00 02 77 D5</p>
 <p>返回：2B 04 04 00 0C EC 98 （CO2） FD 2F （校验码）；</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=噪声传感器>噪声传感器<a href=#噪声传感器 class=hash-link aria-label="Direct link to 噪声传感器" title="Direct link to 噪声传感器">​</a></h3>
-<p>噪声传感器作为独立的 RS485 传感器使用，与同一 RS-485 总线上的其他测量单元并联，因此需要单独读取和配置。</p>
+<p>噪声传感器用作独立的 RS485 传感器，与同一 RS-485 总线上的其他测量单元并联，因此需要单独读取和配置。</p>
 <p>规格：</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image40.png></div>
 <p>数据读取协议和配置：</p>
@@ -229,29 +283,29 @@
 <p>如果查询成功，返回以下信息：</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image01.png></div>
 <p>真实 DB = 寄存器值 /100</p>
-<p>噪声寄存器值是 0x128E=4750，值为 =4750/100=47.5dB</p>
+<p>噪声寄存器值为 0x128E=4750，值为 =4750/100=47.5dB</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id=ascii-协议>ASCII 协议<a href=#ascii-协议 class=hash-link aria-label="Direct link to ASCII 协议" title="Direct link to ASCII 协议">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id=命令定义>命令定义<a href=#命令定义 class=hash-link aria-label="Direct link to 命��令定义" title="Direct link to 命令定义">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=命令定义>命令定义<a href=#命令定义 class=hash-link aria-label="Direct link to 命令定义" title="Direct link to 命令定义">​</a></h3>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image44.png></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=查询命令格式>查询命令格式<a href=#查询命令格式 class=hash-link aria-label="Direct link to 查询命令格式" title="Direct link to 查询命令格式">​</a></h3>
 <p>命令有两种格式：</p>
 <p><strong>1.</strong> <strong>不带 = 的命令</strong> <strong>指的是基本查询方法。</strong></p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/11.png></div>
-<p><em>示例：<code>?&lt;CR>&lt;LF></code> 表示查询设备的地址</em></p>
+<p><em>示例：<code>?&lt;CR>&lt;LF></code> 表示查询设备地址</em></p>
 <p><strong>2.</strong> <strong>带 = 的命令指的是带参数的查询</strong></p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/22.png></div>
-<p><em>示例：0XA;BD=<code>?&lt;CR>&lt;LF></code> 表示查询设备的波特率</em></p>
+<p><em>示例：0XA;BD=<code>?&lt;CR>&lt;LF></code> 表示查询设备波特率</em></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=设置命令格式>设置命令格式<a href=#设置命令格式 class=hash-link aria-label="Direct link to 设置命令格式" title="Direct link to 设置命令格式">​</a></h3>
 <p><strong>设置指定参数，例如设置波特率。</strong></p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/33.png></div>
-<p><em>示例：0XA;BD=96<code>&lt;CR>&lt;LF></code> 表示查询设备的波特率</em></p>
+<p><em>示例：0XA;BD=96<code>&lt;CR>&lt;LF></code> 表示查询设备波特率</em></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=命令列表>命令列表<a href=#命令列表 class=hash-link aria-label="Direct link to 命令列表" title="Direct link to 命令列表">​</a></h3>
 <p>请参考：
 <a href=https://files.seeedstudio.com/products/SenseCAP/SenseCAP_ONE/SenseCAP_ONE_V3_Compact_Weather_Station_User_Guide_V1.5.pdf target=_blank rel="noopener noreferrer">SenseCAP ONE/SenseCAP ONE V3 紧凑型气象站用户指南</a></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id=sdi-12>SDI-12<a href=#sdi-12 class=hash-link aria-label="Direct link to SDI-12" title="Direct link to SDI-12">​</a></h2>
-<p>SDI-12 通信采用三线制，其中两根是传感器电源线，另一根是 SDI-12 信号线。</p>
-<p>SDI-12 总线上的每个传感器都有一个唯一的地址，可以设置为 '0'、'1' ~ '9'、'A' ~ 'Z'、'A' ~ 'Z'。SenseCAP ONE 的 SDI-12 地址默认为 '0'。该传感器支持的指令如下一章所示，每个指令都符合 SDI-12 v1.4。</p>
-<p>传感器由 3.6~16V 的直流电源供电。传感器上电后，会立即进入睡眠模式，等待数据采集设备发出指令。SDI-12 使用 9600bps 的波特率，1 个起始位（高电平），7 个数据位（高 0 低 1，反逻辑），1 个偶校验位，1 个停止位。</p>
+<p>SDI-12 通信采用三线制，其中两根为传感器电源线，另一根为 SDI-12 信号线。</p>
+<p>SDI-12 总线上的每个传感器都有唯一的地址，可以设置为 '0'、'1' ~ '9'、'A' ~ 'Z'、'a' ~ 'z'。SenseCAP ONE 的 SDI-12 地址默认为 '0'。该传感器支持的指令如下一章所示，每条指令都符合 SDI-12 v1.4 标准。</p>
+<p>传感器由 3.6~16V 直流电源供电。传感器上电后，会立即进入睡眠模式，等待数据采集设备发出指令。SDI-12 使用 9600bps 波特率，1 个起始位（高电平），7 个数据位（高 0 低 1，反逻辑），1 个偶校验位，1 个停止位。</p>
 <p>每个字节发送的序列如下图所示：</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/44.png></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=sdi-12-命令和响应>SDI-12 命令和响应<a href=#sdi-12-命令和响应 class=hash-link aria-label="Direct link to SDI-12 命令和响应" title="Direct link to SDI-12 命令和响应">​</a></h3>
@@ -264,7 +318,7 @@
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image48.png></div>
 <p><strong>通信设置：</strong></p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image49.png></div>
-<p>将绿线（GND Data）和黄线（SDI-12 Data）连接到 <strong>USB to SDI-12</strong> 调试器。</p>
+<p>将绿线（GND Data）和黄线（SDI-12 Data）连接到 <strong>USB 转 SDI-12</strong> 调试器。</p>
 <p>将红线（Vin+ 电源正极）和棕线（Vin- 电源地）连接到 12V 电源。</p>
 <p>下载串口调试助手：
 &lt;<a href=https://github.com/Neutree/COMTool&amp;gt;%EF%BC%8C%E7%84%B6%E5%90%8E%E6%89%93%E5%BC%80%E4%B8%B2%E5%8F%A3%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%E3%80%82 target=_blank rel="noopener noreferrer">https://github.com/Neutree/COMTool&amp;gt;，然后打开串口调试工具。</a></p>
@@ -273,7 +327,7 @@
 <p>选择正确的端口号</p>
 </li>
 <li>
-<p>将波特率设置为 USB to SDI-12 调试器的波特率（注意这不是 SDI-12 协议的波特率）</p>
+<p>将波特率设置为 USB 转 SDI-12 调试器的波特率（注意这不是 SDI-12 协议的波特率）</p>
 </li>
 <li>
 <p>勾选 "CRLF"</p>
@@ -290,7 +344,7 @@
 <p>读取空气温度、空气湿度、大气压力、光照强度</p>
 <p>发送"开始测量命令 0M!"，传感器首先响应 "00024"，表示 "0M!" 命令需要 2 秒进行测量并返回 4 个测量值。2 秒后，传感器响应自己的地址 "0"，表示测量已完成。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image51.png></div>
-<p>然后发送"读取测量值命令 0D0!"获取本次测量的 4 个测量值，分别是空气温度 +27.01℃、空气湿度 64.74%、大气压力 100720Pa 和光照强度 10Lux。</p>
+<p>然后发送"读取测量值命令 0D0!"获取本次测量的 4 个测量值，分别是空气温度 +27.01℃、空气湿度 64.74%、大气压力 100720Pa、光照强度 10Lux。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image52.png></div>
 <p>使用扩展测量命令 0M1! 读取最小风向、最大风向、平均风向、最小风速、最大风速和平均风速。设备响应 "00056"，表示 "0M1!" 命令需要 5 秒进行测量并返回 6 个测量值。5 秒后，设备响应自己的地址 "0"，表示测量已完成。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image53.png></div>
@@ -306,4 +360,4 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=sdi-12-错误代码>SDI-12 错误代码<a href=#sdi-12-错误代码 class=hash-link aria-label="Direct link to SDI-12 错误代码" title="Direct link to SDI-12 错误代码">​</a></h3>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image58.png></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id=资源>资源<a href=#资源 class=hash-link aria-label="Direct link to 资源" title="Direct link to 资源">​</a></h2>
-<p><a href=https://files.seeedstudio.com/products/SenseCAP/SenseCAP_ONE/SenseCAP_ONE_V3_Compact_Weather_Station_User_Guide_V1.5.pdf target=_blank rel="noopener noreferrer">SenseCAP ONE/SenseCAP ONE V3 紧凑型气象站用户指南</a></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class=col><a href=https://github.com/Seeed-Studio/wiki-documents/blob/docusaurus-version/docs/zh-CN/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/cn_Tutorials-Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class=theme-last-updated>Last updated<!-- --> on <b><time datetime=2025-11-25T00:00:00.000Z itemprop=dateModified>Nov 25, 2025</time></b> by <b>Michelle Huang</b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/cn/SenseCAP-ONE-Compact-Weather-Station-Introduction/><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>SenseCAP ONE 紧凑型气象站介绍</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/cn/benchmark_labs_forecast_integration_for_seeed_weather_stations/><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Seeed 气象站的 Benchmark Labs 预报集成</div></a></nav></div><div>Loading Comments...</div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#安装 class="table-of-contents__link toc-highlight">安装</a><ul><li><a href=#设备接口介绍 class="table-of-contents__link toc-highlight">设备接口介绍</a><li><a href=#使用-usb-线缆连接 class="table-of-contents__link toc-highlight">使用 USB 线缆连接</a><li><a href=#m12-线缆 class="table-of-contents__link toc-highlight">M12 线缆</a><li><a href=#安装设备 class="table-of-contents__link toc-highlight">安装设备</a><li><a href=#通过-usb-端口配置设备 class="table-of-contents__link toc-highlight">通过 USB 端口配置设备</a><li><a href=#sensecap-one-配置工具 class="table-of-contents__link toc-highlight">SenseCAP ONE 配置工具</a><li><a href=#串口调试工具 class="table-of-contents__link toc-highlight">串口调试工具</a></ul><li><a href=#modbus-rtu-协议 class="table-of-contents__link toc-highlight">Modbus-RTU 协议</a><ul><li><a href=#modbus-rtu-协议消息格式 class="table-of-contents__link toc-highlight">Modbus-RTU 协议消息格式</a><li><a href=#寄存器地址定义 class="table-of-contents__link toc-highlight">寄存器地址定义</a><li><a href=#modbus-rtu-读取 class="table-of-contents__link toc-highlight">Modbus-RTU 读取</a><li><a href=#噪声传感器 class="table-of-contents__link toc-highlight">噪声传感器</a></ul><li><a href=#ascii-协议 class="table-of-contents__link toc-highlight">ASCII 协议</a><ul><li><a href=#命令定义 class="table-of-contents__link toc-highlight">命令定义</a><li><a href=#查询命令格式 class="table-of-contents__link toc-highlight">查询命令格式</a><li><a href=#设置命令格式 class="table-of-contents__link toc-highlight">设置命令格式</a><li><a href=#命令列表 class="table-of-contents__link toc-highlight">命令列表</a></ul><li><a href=#sdi-12 class="table-of-contents__link toc-highlight">SDI-12</a><ul><li><a href=#sdi-12-命令和响应 class="table-of-contents__link toc-highlight">SDI-12 命令和响应</a><li><a href=#sdi-12-读取 class="table-of-contents__link toc-highlight">SDI-12 读取</a></ul><li><a href=#错误代码 class="table-of-contents__link toc-highlight">错误代码</a><ul><li><a href=#modbus-错误代码 class="table-of-contents__link toc-highlight">Modbus 错误代码</a><li><a href=#ascii-错误代码 class="table-of-contents__link toc-highlight">ASCII 错误代码</a><li><a href=#sdi-12-错误代码 class="table-of-contents__link toc-highlight">SDI-12 错误代码</a></ul><li><a href=#资源 class="table-of-contents__link toc-highlight">资源</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>导航</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/cn/Getting_Started/>快速开始</a><li class=footer__item><a class=footer__link-item href=/cn/Sensor_Network/>传感器与感知</a><li class=footer__item><a class=footer__link-item href=/cn/Network/>网络</a><li class=footer__item><a class=footer__link-item href=/cn/Edge_Computing/>边缘计算</a><li class=footer__item><a class=footer__link-item href=/cn/Cloud/>云端</a><li class=footer__item><a href=https://solution.seeed.cc/ target=_blank rel="noopener noreferrer" class=footer__link-item>解决方案</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>生态</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://discord.com/invite/QqMgVwHT3X target=_blank rel="noopener noreferrer" class=footer__link-item>Discord 社区</a><li class=footer__item><a href=https://project.seeedstudio.com/ target=_blank rel="noopener noreferrer" class=footer__link-item>项目中心</a><li class=footer__item><a href=https://www.seeedstudio.com/ecosystem/ target=_blank rel="noopener noreferrer" class=footer__link-item>合作伙伴</a><li class=footer__item><a href=https://www.seeedstudio.com/distributors.html target=_blank rel="noopener noreferrer" class=footer__link-item>经销商</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>快速指引</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.seeedstudio.com/ target=_blank rel="noopener noreferrer" class=footer__link-item>商店</a><li class=footer__item><a href=https://www.seeedstudio.com/get_help/HowToGetHelp target=_blank rel="noopener noreferrer" class=footer__link-item>如何获得帮助</a><li class=footer__item><a href=https://support.seeedstudio.com/knowledgebase target=_blank rel="noopener noreferrer" class=footer__link-item>常见问题</a><li class=footer__item><a href=https://forum.seeedstudio.com/ target=_blank rel="noopener noreferrer" class=footer__link-item>论坛</a><li class=footer__item><a href=https://www.seeedstudio.com/get_help/TechnicalSupport target=_blank rel="noopener noreferrer" class=footer__link-item>技术支持</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>公司</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.seeedstudio.com/about-us/ target=_blank rel="noopener noreferrer" class=footer__link-item>关于我们</a><li class=footer__item><a href=https://www.seeedstudio.com/join-us/ target=_blank rel="noopener noreferrer" class=footer__link-item>加入我们</a><li class=footer__item><a href=https://www.seeedstudio.com/contacts target=_blank rel="noopener noreferrer" class=footer__link-item>联系我们</a><li class=footer__item><a href=https://www.seeedstudio.com/blog/2020/04/22/seeed-in-the-news/ target=_blank rel="noopener noreferrer" class=footer__link-item>媒体报道</a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2025 Seeed Studio, Inc. Built with Docusaurus.</div></div></div></footer></div>
+<p><a href=https://files.seeedstudio.com/products/SenseCAP/SenseCAP_ONE/SenseCAP_ONE_V3_Compact_Weather_Station_User_Guide_V1.5.pdf target=_blank rel="noopener noreferrer">SenseCAP ONE/SenseCAP ONE V3 紧凑型气象站用户指南</a></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class=col><a href=https://github.com/Seeed-Studio/wiki-documents/blob/docusaurus-version/docs/zh-CN/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/cn_Tutorials-Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class=theme-last-updated>Last updated<!-- --> on <b><time datetime=2025-12-08T00:00:00.000Z itemprop=dateModified>Dec 8, 2025</time></b> by <b>Janet</b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/cn/SenseCAP-ONE-Compact-Weather-Station-Introduction/><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>SenseCAP ONE 紧凑型气象站介绍</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/cn/benchmark_labs_forecast_integration_for_seeed_weather_stations/><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Seeed 气象站的 Benchmark Labs 预报集成</div></a></nav></div><div>Loading Comments...</div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#安装 class="table-of-contents__link toc-highlight">安装</a><ul><li><a href=#设备接口介绍 class="table-of-contents__link toc-highlight">设备接口介绍</a><li><a href=#使用-usb-线缆连接 class="table-of-contents__link toc-highlight">使用 USB 线缆连接</a><li><a href=#m12-线缆 class="table-of-contents__link toc-highlight">M12 线缆</a><li><a href=#安装设备 class="table-of-contents__link toc-highlight">安装设备</a><li><a href=#通过-usb-端口配置设备 class="table-of-contents__link toc-highlight">通过 USB 端口配置设备</a><li><a href=#sensecap-one-配置工具 class="table-of-contents__link toc-highlight">SenseCAP ONE 配置工具</a><ul><li><a href=#固件升级 class="table-of-contents__link toc-highlight">固件升级</a></ul><li><a href=#串口调试工具 class="table-of-contents__link toc-highlight">串口调试工具</a></ul><li><a href=#modbus-rtu-协议 class="table-of-contents__link toc-highlight">Modbus-RTU 协议</a><ul><li><a href=#modbus-rtu-协议消息格式 class="table-of-contents__link toc-highlight">Modbus-RTU 协议消息格式</a><li><a href=#寄存器地址定义 class="table-of-contents__link toc-highlight">寄存器地址定义</a><li><a href=#modbus-rtu-读取 class="table-of-contents__link toc-highlight">Modbus-RTU 读取</a><li><a href=#噪声传感器 class="table-of-contents__link toc-highlight">噪声传感器</a></ul><li><a href=#ascii-协议 class="table-of-contents__link toc-highlight">ASCII 协议</a><ul><li><a href=#命令定义 class="table-of-contents__link toc-highlight">命令定义</a><li><a href=#查询命令格式 class="table-of-contents__link toc-highlight">查询命令格式</a><li><a href=#设置命令格式 class="table-of-contents__link toc-highlight">设置命令格式</a><li><a href=#命令列表 class="table-of-contents__link toc-highlight">命令列表</a></ul><li><a href=#sdi-12 class="table-of-contents__link toc-highlight">SDI-12</a><ul><li><a href=#sdi-12-命令和响应 class="table-of-contents__link toc-highlight">SDI-12 命令和响应</a><li><a href=#sdi-12-读取 class="table-of-contents__link toc-highlight">SDI-12 读取</a></ul><li><a href=#错误代码 class="table-of-contents__link toc-highlight">错误代码</a><ul><li><a href=#modbus-错误代码 class="table-of-contents__link toc-highlight">Modbus 错误代码</a><li><a href=#ascii-错误代码 class="table-of-contents__link toc-highlight">ASCII 错误代码</a><li><a href=#sdi-12-错误代码 class="table-of-contents__link toc-highlight">SDI-12 错误代码</a></ul><li><a href=#资源 class="table-of-contents__link toc-highlight">资源</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>导航</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/cn/Getting_Started/>快速开始</a><li class=footer__item><a class=footer__link-item href=/cn/Sensor_Network/>传感器与感知</a><li class=footer__item><a class=footer__link-item href=/cn/Network/>网络</a><li class=footer__item><a class=footer__link-item href=/cn/Edge_Computing/>边缘计算</a><li class=footer__item><a class=footer__link-item href=/cn/Cloud/>云端</a><li class=footer__item><a href=https://solution.seeed.cc/ target=_blank rel="noopener noreferrer" class=footer__link-item>解决方案</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>生态</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://discord.com/invite/QqMgVwHT3X target=_blank rel="noopener noreferrer" class=footer__link-item>Discord 社区</a><li class=footer__item><a href=https://project.seeedstudio.com/ target=_blank rel="noopener noreferrer" class=footer__link-item>项目中心</a><li class=footer__item><a href=https://www.seeedstudio.com/ecosystem/ target=_blank rel="noopener noreferrer" class=footer__link-item>合作伙伴</a><li class=footer__item><a href=https://www.seeedstudio.com/distributors.html target=_blank rel="noopener noreferrer" class=footer__link-item>经销商</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>快速指引</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.seeedstudio.com/ target=_blank rel="noopener noreferrer" class=footer__link-item>商店</a><li class=footer__item><a href=https://www.seeedstudio.com/get_help/HowToGetHelp target=_blank rel="noopener noreferrer" class=footer__link-item>如何获得帮助</a><li class=footer__item><a href=https://support.seeedstudio.com/knowledgebase target=_blank rel="noopener noreferrer" class=footer__link-item>常见问题</a><li class=footer__item><a href=https://forum.seeedstudio.com/ target=_blank rel="noopener noreferrer" class=footer__link-item>论坛</a><li class=footer__item><a href=https://www.seeedstudio.com/get_help/TechnicalSupport target=_blank rel="noopener noreferrer" class=footer__link-item>技术支持</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>公司</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.seeedstudio.com/about-us/ target=_blank rel="noopener noreferrer" class=footer__link-item>关于我们</a><li class=footer__item><a href=https://www.seeedstudio.com/join-us/ target=_blank rel="noopener noreferrer" class=footer__link-item>加入我们</a><li class=footer__item><a href=https://www.seeedstudio.com/contacts target=_blank rel="noopener noreferrer" class=footer__link-item>联系我们</a><li class=footer__item><a href=https://www.seeedstudio.com/blog/2020/04/22/seeed-in-the-news/ target=_blank rel="noopener noreferrer" class=footer__link-item>媒体报道</a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2025 Seeed Studio, Inc. Built with Docusaurus.</div></div></div></footer></div>

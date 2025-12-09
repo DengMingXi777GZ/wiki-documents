@@ -1,4 +1,4 @@
-<!doctype html><html lang=en-US dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-ja/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/ja_Tutorials-Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor" data-has-hydrated=false><meta charset=UTF-8><meta name=generator content="Docusaurus v3.8.1"><title data-rh=true>SenseCAP ONE コンパクト気象センサーの入門ガイド | Seeed Studio Wiki</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"><meta data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true property=og:url content=https://wiki.seeedstudio.com/ja/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor/><meta data-rh=true property=og:locale content=en_US><meta data-rh=true name=docusaurus_locale content=en><meta data-rh=true name=docsearch:language content=en><meta data-rh=true name=docusaurus_version content=current><meta data-rh=true name=docusaurus_tag content=docs-default-current><meta data-rh=true name=docsearch:version content=current><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current><meta data-rh=true property=og:title content="SenseCAP ONE コンパクト気象センサーの入門ガイド | Seeed Studio Wiki"><meta data-rh=true name=description content="SenseCAP ONE コンパクト気象センサーの入門ガイド"><meta data-rh=true property=og:description content="SenseCAP ONE コンパクト気象センサーの入門ガイド"><meta data-rh=true name=keywords content=SenseCAP><meta data-rh=true property=og:image content=https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png><meta data-rh=true name=twitter:image content=https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png><link data-rh=true rel=icon href=/img/S.png><link data-rh=true rel=canonical href=https://wiki.seeedstudio.com/ja/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor/><link data-rh=true rel=alternate href=https://wiki.seeedstudio.com/ja/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor/ hreflang=en-US><link data-rh=true rel=alternate href=https://wiki.seeedstudio.com/ja/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor/ hreflang=x-default><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://wiki.seeedstudio.com/ja/SenseCAP_introduction","name":"SenseCAP","position":1},{"@type":"ListItem","item":"https://wiki.seeedstudio.com/ja/SenseCAP_Sensor_Intro","name":"SenseCAPセンサー","position":2},{"@type":"ListItem","item":"https://wiki.seeedstudio.com/ja/SenseCAP_ONE_weather_sensor","name":" SenseCAP ONE Weather Sensor","position":3},{"@type":"ListItem","item":"https://wiki.seeedstudio.com/ja/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor","name":"SenseCAP ONE コンパクト気象センサーの入門ガイド","position":4}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Seeed Studio Wiki RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Seeed Studio Wiki Atom Feed"><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-M4JG2HVB")</script><link rel=search type=application/opensearchdescription+xml title="Seeed Studio Wiki" href=/opensearch.xml><script src=https://viewer.altium.com/client/static/js/embed.js async></script><script src=/js/custom.js async></script><script src=/js/language-switcher.js async></script><link rel=stylesheet href=/assets/css/styles.58087d77.css><script src=/assets/js/runtime~main.69ecbca9.js defer></script><script src=/assets/js/main.bc9bcd59.js defer></script><body class=navigation-with-keyboard><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4JG2HVB" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript>
+<!doctype html><html lang=en-US dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-ja/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/ja_Tutorials-Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor" data-has-hydrated=false><meta charset=UTF-8><meta name=generator content="Docusaurus v3.8.1"><title data-rh=true>SenseCAP ONE コンパクト気象センサーの入門ガイド | Seeed Studio Wiki</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"><meta data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true property=og:url content=https://wiki.seeedstudio.com/ja/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor/><meta data-rh=true property=og:locale content=en_US><meta data-rh=true name=docusaurus_locale content=en><meta data-rh=true name=docsearch:language content=en><meta data-rh=true name=docusaurus_version content=current><meta data-rh=true name=docusaurus_tag content=docs-default-current><meta data-rh=true name=docsearch:version content=current><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current><meta data-rh=true property=og:title content="SenseCAP ONE コンパクト気象センサーの入門ガイド | Seeed Studio Wiki"><meta data-rh=true name=description content="SenseCAP ONE コンパクト気象センサーの入門ガイド"><meta data-rh=true property=og:description content="SenseCAP ONE コンパクト気象センサーの入門ガイド"><meta data-rh=true name=keywords content=SenseCAP><meta data-rh=true property=og:image content=https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png><meta data-rh=true name=twitter:image content=https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png><link data-rh=true rel=icon href=/img/S.png><link data-rh=true rel=canonical href=https://wiki.seeedstudio.com/ja/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor/><link data-rh=true rel=alternate href=https://wiki.seeedstudio.com/ja/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor/ hreflang=en-US><link data-rh=true rel=alternate href=https://wiki.seeedstudio.com/ja/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor/ hreflang=x-default><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://wiki.seeedstudio.com/ja/SenseCAP_introduction","name":"SenseCAP","position":1},{"@type":"ListItem","item":"https://wiki.seeedstudio.com/ja/SenseCAP_Sensor_Intro","name":"SenseCAPセンサー","position":2},{"@type":"ListItem","item":"https://wiki.seeedstudio.com/ja/SenseCAP_ONE_weather_sensor","name":" SenseCAP ONE Weather Sensor","position":3},{"@type":"ListItem","item":"https://wiki.seeedstudio.com/ja/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor","name":"SenseCAP ONE コンパクト気象センサーの入門ガイド","position":4}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Seeed Studio Wiki RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Seeed Studio Wiki Atom Feed"><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-M4JG2HVB")</script><link rel=search type=application/opensearchdescription+xml title="Seeed Studio Wiki" href=/opensearch.xml><script src=https://viewer.altium.com/client/static/js/embed.js async></script><script src=/js/custom.js async></script><script src=/js/language-switcher.js async></script><link rel=stylesheet href=/assets/css/styles.58087d77.css><script src=/assets/js/runtime~main.3220508e.js defer></script><script src=/assets/js/main.2249285d.js defer></script><body class=navigation-with-keyboard><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4JG2HVB" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript>
 
 
 <svg xmlns=http://www.w3.org/2000/svg style="display: none;"><defs>
@@ -27,12 +27,12 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=m12ケーブル>M12ケーブル<a href=#m12ケーブル class=hash-link aria-label="Direct link to M12ケ��ーブル" title="Direct link to M12ケーブル">​</a></h3>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image6.png></div>
 <p>デバイスはM12 8ピンコネクタを採用しており、異なる色のピンが電源とデータ通信を提供します（上図参照）。</p>
-<p>RS-485で動作する場合、4本のワイヤーのみを接続でき（加熱機能を使用しない）、残りは個別にテープで包んでショートを防ぐことができます</p>
+<p>RS-485で動作する場合、4本のワイヤーのみを接続し（加熱機能を使用しない）、残りは個別にテープで包んでショートを防ぐことができます</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image7.png></div>
 <p>ケーブルを差し込む際は、ケーブルの穴とデバイスコネクタのピンを合わせる必要があります。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image8.png></div>
 <p>ケーブルを差し込み、時計回りに締めます</p>
-<p>注意：ケーブルを底部に挿入する前に、底部に向けてください。そうでないと、ピンが傾いて通信が異常になる可能性があります。</p>
+<p>注意：ケーブルを底部に挿入する前に、底部に向けて狙いを定めてください。そうしないと、ピンが斜めになり、通信が異常になる可能性があります。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image9.png></div>
 <p>加熱機能付きデバイスを使用する場合、別途24V（24V@1Aを推奨）電源が必要です。グレーワイヤー5は電源のマイナスに、ピンクワイヤー6は電源のプラスに接続します。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image10.png></div>
@@ -41,22 +41,22 @@
 <div align=center><img width=300 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image11.png></div>
 <p>スリーブのサイズは以下の通りです。</p>
 <div align=center><img width=300 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image12.png></div>
-<p>ポールの直径は75cm以下にすることをお勧めします。</p>
+<p>ポールの直径は75cm以下にすることを推奨します。</p>
 <div align=center><img width=300 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image13.png></div>
 <p>フランジプレートの寸法は以下の通りです。</p>
 <div align=center><img width=300 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image14.png></div>
 <blockquote>
-<p>注意：最も正確な風向データを取得するため、設置の際は物理的な北の向きを確認し、ベースにある<strong>矢印</strong>を真北に正確に合わせてください。そうでない場合は、設定時に電子コンパスを有効にしてください。</p>
+<p>注意：可能な限り正確な風向データを取得するため、設置時にベースの<strong>矢印</strong>を真北に直接向けて物理的な北方向を確保してください。そうでない場合は、設定時に電子コンパスを有効にしてください。</p>
 </blockquote>
 <h1>デバイスの動作モード</h1>
-<p>インストール後、デバイスの電源を入れ、設定を行い、デバイスからデータを収集できます。</p>
+<p>設置後、デバイスの電源を入れ、設定を行い、デバイスからデータを収集できます。</p>
 <p>デバイスには2つの動作モードがあります：<strong>設定モードと動作モード</strong>です。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image15.png></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=usbポート経由でのデバイス設定>USBポート経由でのデバイス設定<a href=#usbポート経由でのデバイス設定 class=hash-link aria-label="Direct link to USBポート経由でのデバイス設定" title="Direct link to USBポート経由でのデバイス設定">​</a></h3>
 <p>デバイスの底部に防水の丸いカバーがあります。反時計回りに回してこのカバーを取り外すと、USB Type-Cコネクタと設定ボタンが見えます。</p>
 <p>USB Type-Cケーブルでデバイスをコンピュータに接続します。コンピュータは自動的にデバイスドライバをインストールします。ドライバが正常にインストールされると、デバイスマネージャーでシリアルポートを確認できます。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image16.png></div>
-<p>ドライバが自動的にインストールされない場合は、このリンクをクリックして<a href=https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers target=_blank rel="noopener noreferrer">手動でダウンロード</a>し、<a href=https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers target=_blank rel="noopener noreferrer">ドライバをインストール</a>してください。（バージョンはCP210x Windows Driversです）</p>
+<p>ドライバが自動的にインストールされない場合は、このリンクをクリックして<a href=https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers target=_blank rel="noopener noreferrer">手動でダウンロード</a>し、<a href=https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers target=_blank rel="noopener noreferrer">ドライバをインストール</a>してください（バージョンはCP210x Windows Drivers）。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image17.png></div>
 <p><strong>デバイスを設定する方法は2つあります：</strong></p>
 <ul>
@@ -96,23 +96,77 @@
 <li>Modbusアドレスを変更：Modbusアドレスにアドレスを書き込み、"Write to Device" をクリックします。</li>
 </ol>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image23.png></div>
-<p>設定ページでは、デバイス名、データタイプ、データアップロード間隔を変更できます。変更後は、"Write to Device" をクリックして変更を有効にする必要があります。</p>
-<p>アプリケーション設定では、ツールがセンサーデータを読み取るサイクルを設定でき、最小は2秒、曲線のドット範囲を設定できます。</p>
+<p>設定ページでは、デバイス名、データタイプ、データアップロード間隔を変更できます。変更後は、変更を有効にするために "Write to Device" をクリックする必要があります。</p>
+<p>アプリケーション設定では、ツールがセンサーデータを読み取るサイクルを設定でき、最小は2S、カーブのドット範囲を設定できます。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image24.png></div>
 <p>"Firmware Update" をクリックしてデバイスファームウェアを更新します。ファームウェアを入手するには、営業または技術サポート（<a href=mailto:sensecap@seeed.cc target=_blank rel="noopener noreferrer">sensecap@seeed.cc</a>）にお問い合わせください。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image25.png></div>
-<p>アップグレードページでは、メインボードファームウェアまたはドライバーボードファームウェアの更新を選択する必要があります。ローカルリポジトリでファームウェアファイルを選択し、"Update Now" をクリックします。更新プロセス中に予期しない電源断が発生した場合、更新は実行されません。同じプロセスを経てファームウェアを更新する必要があります。</p>
+<p>アップグレードページでは、メインボードファームウェアまたはドライバーボードファームウェアの更新を選択する必要があります。ローカルリポジトリでファームウェアファイルを選択し、"Update Now" をクリックします。更新プロセス中に予期しない電源断が発生した場合、更新は実行されません。ファームウェアを更新するには、同じプロセスを実行する必要があります。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image26.png></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id=シリアルデバッグツール>シリアルデバッグツール<a href=#シリアルデバッグツール class=hash-link aria-label="Direct link to シリア�ルデバッグツール" title="Direct link to シリアルデバッグツール">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id=ファームウェアアップグレード>ファームウェアアップグレード<a href=#ファームウェアアップグレード class=hash-link aria-label="Direct link to ファームウェアアップグレード" title="Direct link to ファームウェアアップグレード">​</a></h4>
+<ol>
+<li><code>SenseCAP One Configuration Tool</code> を開きます</li>
+</ol>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/SenseCAP_One_Configuration_Tool.png></div>
+<ol start=2>
+<li>
+<p>Type-Cケーブルでデバイスをコンピュータに接続します</p>
+</li>
+<li>
+<p>ソフトウェアを開き、デバイスの正しい <code>COM</code> ポートを選択し、<code>"Connect"</code> をクリックします</p>
+</li>
+</ol>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/Connect.png></div>
+<ol start=4>
+<li>接続後、<code>"Firmware Update"</code> をクリックします</li>
+</ol>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/Firmware_Update.png></div>
+<ol start=5>
+<li>ターゲットボードと対応するファームウェアファイルを選択します</li>
+</ol>
+<ul>
+<li><code>Master board</code> を選択します</li>
+</ul>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/Master_board.png></div>
+<ul>
+<li>
+<p><code>"Local File"</code> をクリックし、ファームウェアフォルダを参照します</p>
+</li>
+<li>
+<p><code>"Update"</code> をクリックします</p>
+</li>
+</ul>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/Update.png></div>
+<ol start=6>
+<li><code>"Update"</code>をクリックした後、デバイスのResetボタン（Type-Cポートの隣にあります）を押します。</li>
+</ol>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/Reset.png></div>
+<p>ボタンを押してから数秒後にアップデートプロセスが開始されます。</p>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/Update2.png></div>
+<ol start=7>
+<li>アップデートが完了したら、再度Resetボタンを押し、画面上の<code>"OK"</code>をクリックします。</li>
+</ol>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/Reset2.png></div>
+<ol start=8>
+<li>
+<p>上記の手順を繰り返して、<code>Slave Board 1</code>に別のファームウェアをフラッシュします。</p>
+</li>
+<li>
+<p>完了後、Firmware Updateウィンドウを閉じ、<code>"Disconnect"</code>をクリックします。</p>
+</li>
+</ol>
+<div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/Disconnect.png></div>
+<p>これで気象ステーションのファームウェアアップグレードの全手順が完了しました。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=シリアルデバッグツール>シリアルデバッグツール<a href=#シリアルデバッグツール class=hash-link aria-label="Direct link to シリアルデバッグツール" title="Direct link to シリアルデバッグツール">​</a></h3>
 <p>通信設定は以下の通りです：</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image27.png></div>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image28.png></div>
 <ul>
 <li>
-<p>シリアルデバッグアシスタントで、対応するCOMポートを選択します。</p>
+<p>Serial Debug Assistantで、対応するCOMポートを選択します。</p>
 </li>
 <li>
-<p>"click Enter to start a new line" チェックボックスをチェックします。</p>
+<p>"click Enter to start a new line"チェックボックスにチェックを入れます。</p>
 </li>
 <li>
 <p>ボーレートを9,600に設定します。</p>
@@ -126,146 +180,146 @@
 </ul>
 <p>詳細なASIICコマンドについては、次の章を確認してください。</p>
 <h1>通信プロトコル</h1>
-<p>デバイスは以下の通信プロトコルをサポートします：</p>
+<p>デバイスは以下の通信プロトコルをサポートしています：</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image29.png></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id=modbus-rtuプロトコル>Modbus-RTUプロトコル<a href=#modbus-rtuプロトコル class=hash-link aria-label="Direct link to Modbus-RTUプロトコル" title="Direct link to Modbus-RTUプロトコル">​</a></h2>
 <p><strong>プロトコル通信パラメータ</strong></p>
 <div align=center><img width={800} src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/DefaultDeviceAddress.png></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id=modbus-rtuプロトコルメッセージフォーマット>Modbus-RTUプロトコルメッセージフォーマット<a href=#modbus-rtuプロトコル��メッセージフォーマット class=hash-link aria-label="Direct link to Modbus-RTUプロトコルメッセージフォーマット" title="Direct link to Modbus-RTUプロトコルメッセージフォーマット">​</a></h3>
-<p>センサーデータは入力レジスタに格納され、読み取り専用です。</p>
-<p>RS-485のデバイスアドレスと通信ボーレートは保持レジスタに格納され、変更可能です。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=modbus-rtuプロトコルメッセージフォーマット>Modbus-RTUプロトコルメッセージフォーマット<a href=#modbus-rtuプロトコルメッセージフォーマット class=hash-link aria-label="Direct link to Modbus-RTUプロトコルメッセージフォーマット" title="Direct link to Modbus-RTUプロトコルメッセージフォーマット">​</a></h3>
+<p>センサーデータはInput Registerに格納され、読み取り専用です。</p>
+<p>デバイスアドレスとRS-485の通信ボーレートはHolding Registerに格納され、変更可能です。</p>
 <p>各レジスタは16ビットで、2バイトを占有します。</p>
-<p><strong>入力レジスタからメッセージを読み取ります。</strong></p>
+<p><strong>入力レジスタからメッセージを読み取る。</strong></p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image32.png></div>
-<p><strong>保持レジスタの読み書き。</strong></p>
+<p><strong>ホールディングレジスタの読み取りと書き込み。</strong></p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image33.png></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=レジスタアドレス定義>レジスタアドレス定義<a href=#レジスタアドレス定義 class=hash-link aria-label="Direct link to レジスタアドレス定義" title="Direct link to レジスタアドレス定義">​</a></h3>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image34.png></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id=modbus-rtu-読み取り>Modbus-RTU 読み取り<a href=#modbus-rtu-読み取り class=hash-link aria-label="Direct link to Modbus-RTU 読み取り" title="Direct link to Modbus-RTU 読み取り">​</a></h3>
-<p>以下は <strong>Modbus Poll ツール</strong> の例です</p>
-<p>（&lt;<a href=https://www.modbustools.com/download.html target=_blank rel="noopener noreferrer">https://www.modbustools.com/download.html</a>> からダウンロード）。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=modbus-rtu読み取り>Modbus-RTU読み取り<a href=#modbus-rtu読み取り class=hash-link aria-label="Direct link to Modbus-RTU読み取り" title="Direct link to Modbus-RTU読み取り">​</a></h3>
+<p>以下は<strong>Modbus Pollツール</strong>の例です</p>
+<p>（&lt;<a href=https://www.modbustools.com/download.html&amp;gt;%E3%81%8B%E3%82%89%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%EF%BC%89%E3%80%82 target=_blank rel="noopener noreferrer">https://www.modbustools.com/download.html&amp;gt;からダウンロード）。</a></p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image35.png></div>
-<p>接続パラメータの設定：ボーレート 9600bps、データビット 8、
-パリティなし、ストップビット 1。</p>
+<p>接続パラメータの設定：ボーレート9600bps、8データビット、
+パリティなし、1ストップビット。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image36.png></div>
-<p>気温レジスタ 0x0000 から 0x0001 を読み取り、Setup をクリックして Read/Write Definition を選択します</p>
+<p>気温レジスタ0x0000から0x0001を読み取り、Setupをクリックし、Read/Write Definitionを選択します</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image37.png></div>
-<p>デフォルトのスレーブ ID（5-in-1 は 10、7-in-1 は 20、9-in-1 は 38）、ファンクションコード 04、開始アドレス 0、数量（5-in-1 は 6、7-in-1 は
-28、9-in-1 は 32）を設定します；</p>
+<p>デフォルトのスレーブID（5-in-1は10、7-in-1は20、9-in-1は38）、ファンクションコード04、開始アドレス0、数量（5-in-1は6、7-in-1は
+28、9-in-1は32）を設定します；</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image38.png></div>
-<p>コンピュータは 1 秒ごとにセンサーデータを読み取り、測定値（行 0 と行 1）は下の画像に示されています。測定値を 1000 で割ると真の温度値になります。28300/1000 = 28.3 °C</p>
+<p>コンピュータは1秒ごとにセンサーデータを読み取り、測定値（行0と行1）は下の画像に示されています。測定値を1000で割ると真の温度値になります。28300/1000 = 28.3 °C</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image39.png></div>
 <p>右側では、送受信された生データパッケージを確認できます。</p>
 <p>温度が正の場合：</p>
 <ol>
 <li>
-<p>ホストが 01 04 00 00 00 02 71 CB を送信</p>
+<p>ホストが01 04 00 00 00 02 71 CBを送信</p>
 </li>
 <li>
-<p>スレーブが 01 04 04 00 00 6E 8C D6 41 で応答</p>
+<p>スレーブが01 04 04 00 00 6E 8C D6 41で応答</p>
 </li>
 <li>
-<p>温度データ 0x00006E8C（16進数）を返し、10進数に変換すると = 28300、これを 1000 で割ると対応する気温が得られます。気温 = 28300/1000 = 28.3 °C</p>
+<p>温度データ0x00006E8C（16進）を返し、10進数に変換 = 28300、1000で割って対応する気温を取得、気温 = 28300/1000 = 28.3 °C</p>
 </li>
 </ol>
 <p><strong>温度が負の場合</strong></p>
-<p>温度は補数計算によって取得する必要があります。</p>
+<p>温度は補数計算を通じて取得する必要があります。</p>
 <ol>
 <li>
-<p>ホストが 01 04 00 00 00 02 71 CB を送信</p>
+<p>ホストが01 04 00 00 00 02 71 CBを送信</p>
 </li>
 <li>
-<p>スレーブが 01 04 04 FF FF FC 18 D6 41 で応答</p>
+<p>スレーブが01 04 04 FF FF FC 18 D6 41で応答</p>
 </li>
 <li>
-<p>返された温度データ FFFFFC18H（16進数補数）。</p>
+<p>返された温度データFFFFFC18H（16進補数）。</p>
 </li>
 <li>
-<p>元のコードは - (FF FF FC 18-1 = FF FF FC 17) = 80 00 03 E8（16進数）= -1000（10進数）。</p>
+<p>元のコードは - (FF FF FC 18-1 = FF FF FC 17) = 80 00 03 E8（16進）= -1000（10進）。</p>
 </li>
 <li>
-<p>そして温度測定値は -1000/1000 = -1°</p>
+<p>そして温度測定値は-1000/1000 = -1°</p>
 </li>
 </ol>
-<p><strong>S500 デコード</strong></p>
-<p>レジスタ 0x0000~0x0005 を読み取り。</p>
+<p><strong>S500デコード</strong></p>
+<p>レジスタ0x0000~0x0005を読み取り。</p>
 <p>送信コマンド：0A 04 00 00 00 06 71 73（チェックコード）；</p>
-<p>返信：26 04 40 00 00 70 80（温度）00 00 95 10（湿度） 06 07 94 40（気圧）99 09（チェックコード）；レジスタ 0x0008~0x0013 を読み取り。送信コマンド：0A 04 00 08 00 0C 70 B6（チェックコード）；</p>
+<p>返信：26 04 40 00 00 70 80（温度）00 00 95 10（湿度） 06 07 94 40（気圧）99 09（チェックコード）；レジスタ0x0008~0x0013を読み取り。送信コマンド：0A 04 00 08 00 0C 70 B6（チェックコード）；</p>
 <p>返信：0A 04 0C 00 00 00 00（最小風向）00 03 6E 84（最大風向）00 03 C8 C0（平均風向）00 00 00 00（最小風速）00 00 04 BC（最大風速）00 00 02 10（平均風速）BC 78（チェックコード）</p>
-<p><strong>S600 デコード</strong></p>
-<p>レジスタ 0x0000~0x0013 を読み取り</p>
+<p><strong>S600デコード</strong></p>
+<p>レジスタ0x0000~0x0013を読み取り</p>
 <p>送信コマンド: 45 03 00 00 00 13 0B 43</p>
 <p>返信: 45 04 40 00 00 70 80（温度） 00 00 95 10（湿度） 06 07 94 40（気圧） 00 00 00 00（光） 00 00 00 00（最小風向） 00 00 00 00（最大風速） 00 00 00 00（平均風向） 00 00 00 00 （最小風速） 00 00 00 00（最大風速） 00 00 00 00（平均風速）77FD（チェックコード）</p>
-<p><strong>S700 デコード</strong></p>
-<p>レジスタ 0x0000-0x001F & 0x0030-0x0033 を読み取り。</p>
+<p><strong>S700デコード</strong></p>
+<p>レジスタ0x0000-0x001F & 0x0030-0x0033を読み取り。</p>
 <p>送信コマンド: 14 04 00 00 00 20 F3 06</p>
-<p>返信: 14 04 40 00 00 70 80（温度） 00 00 95 10（湿度） 06 07 94 40（気圧） 00 00 00 00（光） 00 00 00 00（最小風向） 00 00 00 00（最大風向） 00 00 00 00（平均風向） 00 00 00 00 （最小風速）00 00 00 00（最大風速) 00 00 00 00（平均風速） 00 00 00 00（累積降雨量） 00 00 00 00（累積降雨時間） 00 00 00 00（雨強度） 00 00 00 00（最大雨強度） 00 00 6A 7C（加熱温度） 00 00 00 00（ダンピング状態） 99 09（チェックコード）</p>
-<p><strong>S900 デコード</strong></p>
-<p>レジスタ 0x0000-0x001F & 0x0030-0x0033 を読み取り。</p>
+<p>返信: 14 04 40 00 00 70 80（温度） 00 00 95 10（湿度） 06 07 94 40（気圧） 00 00 00 00（光） 00 00 00 00（最小風向） 00 00 00 00（最大風向） 00 00 00 00（平均風向） 00 00 00 00 （最小風速）00 00 00 00（最大風速) 00 00 00 00（平均風速） 00 00 00 00（累積降雨量） 00 00 00 00（累積降雨時間） 00 00 00 00（雨強度） 00 00 00 00（最大雨強度） 00 00 6A 7C（加熱温度） 00 00 00 00（転倒状態） 99 09（チェックコード）</p>
+<p><strong>S900デコード</strong></p>
+<p>レジスタ0x0000-0x001F & 0x0030-0x0033を読み取り。</p>
 <p>送信コマンド: 26 04 00 00 00 20 F7 05</p>
-<p>返信: 26 04 40 00 00 70 80 (温度) 00 00 95 10(湿度) 06 07 94 40(気圧) 00 00 00 00(光) 00 00 00 00(最小風向) 00 00 00 00(最大風向) 00 00 00 00(平均風向) 00 00 00 00 (最小風速) 00 00 00 00(最大風速) 00 00 00 00(平均風速) 00 00 00 00(累積降雨量) 00 00 00 00(累積降雨時間) 00 00 00 00(雨強度) 00 00 00 00(最大雨強度)00 00 6A 7C(加熱温度) 00 00 00 00(ダンピング状態) 99 09(チェックコード)</p>
-<p>PM2.5 と PM10 は別途読み取る必要があります：</p>
+<p>返信: 26 04 40 00 00 70 80 (温度) 00 00 95 10(湿度) 06 07 94 40(気圧) 00 00 00 00(光) 00 00 00 00(最小風向) 00 00 00 00(最大風向) 00 00 00 00(平均風向) 00 00 00 00 (最小風速) 00 00 00 00(最大風速) 00 00 00 00(平均風速) 00 00 00 00(累積降雨量) 00 00 00 00(累積降雨時間) 00 00 00 00(雨強度) 00 00 00 00(最大雨強度)00 00 6A 7C(加熱温度) 00 00 00 00(転倒状態) 99 09(チェックコード)</p>
+<p>PM2.5とPM10は別途読み取る必要があります：</p>
 <p>送信コマンド: 26 04 00 30 00 04 F7 11</p>
 <p>返信: 26 04 08 00 00 90 88(PM2.5) 00 00 A4 10(PM10) 13 FA(チェックコード)</p>
-<p><strong>S1000 デコード</strong></p>
-<p>レジスタ 0x0000-0x001F と 0x0030-0x0033 を読み取り。</p>
+<p><strong>S1000デコード</strong></p>
+<p>レジスタ0x0000-0x001Fと0x0030-0x0033を読み取り。</p>
 <p>送信コマンド: 2B 04 00 00 00 20 F6 18</p>
-<p>返信: 2B 04 40 00 00 70 80 (温度) 00 00 95 10(湿度) 06 07 94 40(気圧) 00 00 00 00(光) 00 00 00 00(最小風向) 00 00 00 00(最大風向) 00 00 00 00(平均風向) 00 00 00 00 (最小風速) 00 00 00 00(最大風速) 00 00 00 00(平均風速) 00 00 00 00(累積降雨量) 00 00 00 00(累積降雨時間) 00 00 00 00(雨強度) 00 00 00 00(最大雨強度)00 00 6A 7C(加熱温度) 00 00 00 00(ダンピング状態) 99 09(チェックコード)</p>
-<p>PM2.5、PM10、CO2 は別途読み取る必要があります：</p>
+<p>返信: 2B 04 40 00 00 70 80 (温度) 00 00 95 10(湿度) 06 07 94 40(気圧) 00 00 00 00(光) 00 00 00 00(最小風向) 00 00 00 00(最大風向) 00 00 00 00(平均風向) 00 00 00 00 (最小風速) 00 00 00 00(最大風速) 00 00 00 00(平均風速) 00 00 00 00(累積降雨量) 00 00 00 00(累積降雨時間) 00 00 00 00(雨強度) 00 00 00 00(最大雨強度)00 00 6A 7C(加熱温度) 00 00 00 00(転倒状態) 99 09(チェックコード)</p>
+<p>PM2.5、PM10、CO2は別途読み取る必要があります：</p>
 <p>送信コマンド: 2B 04 00 30 00 04 F6 0C</p>
 <p>返信: 2B 04 08 00 00 90 88(PM2.5) 00 00 A4 10(PM10) 13 FA(チェックコード)</p>
-<p>レジスタ 0x0040~0x0041 を読み取り。</p>
+<p>レジスタ0x0040~0x0041を読み取り。</p>
 <p>送信コマンド:2B 04 00 40 00 02 77 D5</p>
 <p>返信:2B 04 04 00 0C EC 98 （CO2） FD 2F （チェックコード）；</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id=ノイズセンサー>ノイズセンサー<a href=#ノイズ��センサー class=hash-link aria-label="Direct link to ノイズセンサー" title="Direct link to ノイズセンサー">​</a></h3>
-<p>ノイズセンサーは独立した RS485 センサーとして使用され、同じ RS-485 バス上の他の測定ユニットと並列に接続されるため、別途読み取りと設定が必要です。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=ノイズセンサー>ノイズセンサー<a href=#ノイズセンサー class=hash-link aria-label="Direct link to ノイズセンサー" title="Direct link to ノイズセンサー">​</a></h3>
+<p>ノイズセンサーは独立したRS485センサーとして使用され、同じRS-485バス上の他の測定ユニットと並列に接続されているため、個別に読み取りと設定を行う必要があります。</p>
 <p>仕様：</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image40.png></div>
 <p>データ読み取りプロトコルと設定：</p>
-<p>通信プロトコルは標準 RS485 Modbus-RTU プロトコルを採用し、プロトコル通信パラメータは以下の通りです：</p>
+<p>通信プロトコルは標準RS485 Modbus-RTUプロトコルを採用し、プロトコル通信パラメータは以下の通りです：</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image41.png></div>
 <p>ノイズセンサー（アドレス：40、0x28）のデータを照会：</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image42.png></div>
-<p>照会が成功すると、以下の情報が返されます：</p>
+<p>照会が成功した場合、以下の情報が返されます：</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image01.png></div>
-<p>実際の DB = レジスタ値 /100</p>
-<p>ノイズレジスタ値は 0x128E=4750 で、値は =4750/100=47.5dB</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id=ascii-プロトコル>ASCII プロトコル<a href=#ascii-プロトコル class=hash-link aria-label="Direct link to ASCII プロトコル" title="Direct link to ASCII プロトコル">​</a></h2>
+<p>実際のDB = レジスタ値 /100</p>
+<p>ノイズレジスタ値は0x128E=4750で、値は=4750/100=47.5dB</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id=asciiプロトコル>ASCIIプロトコル<a href=#asciiプロトコル class=hash-link aria-label="Direct link to ASCIIプロトコル" title="Direct link to ASCIIプロトコル">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=コマンド定義>コマンド定義<a href=#コマンド定義 class=hash-link aria-label="Direct link to コマンド定義" title="Direct link to コマンド定義">​</a></h3>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image44.png></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=クエリコマンド形式>クエリコマンド形式<a href=#クエリコマンド形式 class=hash-link aria-label="Direct link to クエリコマンド形式" title="Direct link to クエリコマンド形式">​</a></h3>
-<p>コマンドには 2 つの形式があります：</p>
-<p><strong>1.</strong> <strong>= のないコマンド</strong> <strong>は基本的なクエリ方法を指します。</strong></p>
+<p>コマンドには2つの形式があります：</p>
+<p><strong>1.</strong> <strong>= なしのコマンドは基本的なクエリ方法を指します。</strong></p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/11.png></div>
-<p><em>例: <code>?&lt;CR>&lt;LF></code> はデバイスのアドレスを照会することを示します</em></p>
-<p><strong>2.</strong> <strong>= のあるコマンドは引数付きクエリを指します</strong></p>
+<p><em>例：<code>?&lt;CR>&lt;LF></code> はデバイスのアドレスをクエリすることを示します</em></p>
+<p><strong>2.</strong> <strong>= 付きのコマンドは引数付きのクエリを指します</strong></p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/22.png></div>
-<p><em>例: 0XA;BD=<code>?&lt;CR>&lt;LF></code> はデバイスのボーレートを照会することを示します</em></p>
+<p><em>例：0XA;BD=<code>?&lt;CR>&lt;LF></code> はデバイスのボーレートをクエリすることを示します</em></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=設定コマンド形式>設定コマンド形式<a href=#設定コマンド形式 class=hash-link aria-label="Direct link to 設定コマンド形式" title="Direct link to 設定コマンド形式">​</a></h3>
 <p><strong>ボーレートの設定など、指定されたパラメータを設定します。</strong></p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/33.png></div>
-<p><em>例: 0XA;BD=96<code>&lt;CR>&lt;LF></code> はデバイスのボーレートを照会することを示します</em></p>
+<p><em>例：0XA;BD=96<code>&lt;CR>&lt;LF></code> はデバイスのボーレートをクエリすることを示します</em></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=コマンドリスト>コマンドリスト<a href=#コマンドリスト class=hash-link aria-label="Direct link to コマンドリスト" title="Direct link to コマンドリスト">​</a></h3>
 <p>以下を参照してください：
-<a href=https://files.seeedstudio.com/products/SenseCAP/SenseCAP_ONE/SenseCAP_ONE_V3_Compact_Weather_Station_User_Guide_V1.5.pdf target=_blank rel="noopener noreferrer">SenseCAP ONE/SenseCAP ONE V3 Compact Weather Station User Guide</a></p>
+<a href=https://files.seeedstudio.com/products/SenseCAP/SenseCAP_ONE/SenseCAP_ONE_V3_Compact_Weather_Station_User_Guide_V1.5.pdf target=_blank rel="noopener noreferrer">SenseCAP ONE/SenseCAP ONE V3 コンパクト気象ステーション ユーザーガイド</a></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id=sdi-12>SDI-12<a href=#sdi-12 class=hash-link aria-label="Direct link to SDI-12" title="Direct link to SDI-12">​</a></h2>
-<p>SDI-12 通信は 3 本の線を採用し、そのうち 2 本はセンサー電源線で、もう 1 本は SDI-12 信号線です。</p>
-<p>SDI-12 バス上の各センサーには固有のアドレスがあり、'0'、'1' ~ '9'、'A' ~ 'Z'、'A' ~ 'Z' に設定できます。SenseCAP ONE の SDI-12 アドレスはデフォルトで '0' です。このセンサーがサポートする命令は次の章に示されており、各命令は SDI-12 v1.4 に準拠しています。</p>
-<p>センサーは 3.6~16V の DC 電源で駆動されます。センサーの電源を入れると、すぐにスリープモードに入り、データ取得機器からの指示を待ちます。SDI-12 はボーレート 9600bps、スタートビット 1（高レベル）、データビット 7（高 0 低 1、反論理）、偶数パリティビット 1、ストップビット 1 を使用します。</p>
-<p>送信される各バイトのシーケンスは以下の図に示されています：</p>
+<p>SDI-12通信は3本の線を使用し、そのうち2本はセンサー電源線、もう1本はSDI-12信号線です。</p>
+<p>SDI-12バス上の各センサーには固有のアドレスがあり、'0'、'1' ～ '9'、'A' ～ 'Z'、'a' ～ 'z'に設定できます。SenseCAP ONEのSDI-12アドレスはデフォルトで'0'です。このセンサーがサポートする命令は次の章に示されており、各命令はSDI-12 v1.4に準拠しています。</p>
+<p>センサーは3.6～16VのDC電源で駆動されます。センサーの電源を入れると、すぐにスリープモードに入り、データ収集機器からの指示を待ちます。SDI-12は9600bpsのボーレート、1スタートビット（ハイレベル）、7データビット（ハイ0とロー1、反論理）、1偶数パリティビット、1ストップビットを使用します。</p>
+<p>送信される各バイトのシーケンスは次の図に示されています：</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/44.png></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id=sdi-12-コマンドと応答>SDI-12 コマンドと応答<a href=#sdi-12-コマンドと応答 class=hash-link aria-label="Direct link to SDI-12 コマンドと応答" title="Direct link to SDI-12 コマンドと応答">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=sdi-12コマンドと応答>SDI-12コマンドと応答<a href=#sdi-12コマンドと応答 class=hash-link aria-label="Direct link to SDI-12コマンドと応答" title="Direct link to SDI-12コマンドと応答">​</a></h3>
 <p>以下を参照してください：
 &lt;<a href=https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf target=_blank rel="noopener noreferrer">https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf</a>></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id=sdi-12-読み取り>SDI-12 読み取り<a href=#sdi-12-読み取り class=hash-link aria-label="Direct link to SDI-12 読み取り" title="Direct link to SDI-12 読み取り">​</a></h3>
-<p><strong>SDI-12 の配線</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id=sdi-12読み取り>SDI-12読み取り<a href=#sdi-12読み取り class=hash-link aria-label="Direct link to SDI-12読み取り" title="Direct link to SDI-12読み取り">​</a></h3>
+<p><strong>SDI-12の配線</strong></p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image47.png></div>
-<p><strong>USB to SDI-12 デバッガーを使用してデバイスと通信</strong></p>
+<p><strong>USB to SDI-12デバッガーを使用してデバイスと通信する</strong></p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image48.png></div>
 <p><strong>通信設定：</strong></p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image49.png></div>
 <p>緑線（GND Data）と黄線（SDI-12 Data）を<strong>USB to SDI-12</strong>デバッガーに接続します。</p>
-<p>そして赤線（Vin+ power positive）と茶線（Vin-power ground）を12V電源に接続します。</p>
+<p>そして赤線（Vin+ 電源正極）と茶線（Vin- 電源グランド）を12V電源に接続します。</p>
 <p>シリアルポートデバッグアシスタントをダウンロードします：
 &lt;<a href=https://github.com/Neutree/COMTool&amp;gt;%E3%80%81%E3%81%9D%E3%81%97%E3%81%A6%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E3%83%9D%E3%83%BC%E3%83%88%E3%83%87%E3%83%90%E3%83%83%E3%82%B0%E3%83%84%E3%83%BC%E3%83%AB%E3%82%92%E9%96%8B%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82 target=_blank rel="noopener noreferrer">https://github.com/Neutree/COMTool&amp;gt;、そしてシリアルポートデバッグツールを開きます。</a></p>
 <ul>
@@ -273,7 +327,7 @@
 <p>正しいポート番号を選択します</p>
 </li>
 <li>
-<p>ボーレートをUSB to SDI-12デバッガーのボーレートに設定します（SDI-12プロトコルのボーレートではないことに注意してください）</p>
+<p>ボーレートをUSB to SDI-12デバッガーのボーレートに設定します（SDI-12プロトコルのボーレートではないことに注意）</p>
 </li>
 <li>
 <p>"CRLF"をチェックします</p>
@@ -282,19 +336,19 @@
 <p>クリックしてシリアルポートを開きます。</p>
 </li>
 <li>
-<p>デバイスアドレス問い合わせコマンド"?!"を送信し、応答"0"が表示されれば接続は正常です。</p>
+<p>クエリデバイスアドレスコマンド"?!"を送信し、応答"0"が表示されれば接続は正常です。</p>
 </li>
 </ul>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image50.png></div>
 <p><strong>測定開始</strong></p>
 <p>気温、湿度、気圧、光強度を読み取ります</p>
-<p>"測定開始コマンド0M!"を送信すると、センサーはまず"00024"で応答します。これは"0M!"コマンドが2秒で測定を行い、4つの測定値を返すことを意味します。2秒後、センサーは自身のアドレス"0"で応答し、測定が完了したことを示します。</p>
+<p>"測定開始コマンド0M!"を送信すると、センサーはまず"00024"で応答します。これは"0M!"コマンドが測定に2秒かかり、4つの測定値を返すことを意味します。2秒後、センサーは自身のアドレス"0"で応答し、測定が完了したことを示します。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image51.png></div>
-<p>次に"測定値読み取りコマンド0D0!"を送信して、この測定の4つの測定値を取得します。それらは気温+27.01℃、湿度64.74%、気圧100720Pa、光強度10Luxです。</p>
+<p>次に"測定値読み取りコマンド0D0!"を送信して、この測定の4つの測定値を取得します。これらは気温+27.01℃、湿度64.74%、気圧100720Pa、光強度10Luxです。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image52.png></div>
-<p>拡張測定コマンド0M1!を使用して、最小風向、最大風向、平均風向、最小風速、最大風速、平均風速を読み取ります。デバイスは"00056"で応答し、これは"0M1!"コマンドが5秒で測定を行い、6つの測定値を返すことを意味します。5秒後、デバイスは自身のアドレス"0"で応答し、測定が完了したことを示します。</p>
+<p>拡張測定コマンド0M1!を使用して、最小風向、最大風向、平均風向、最小風速、最大風速、平均風速を読み取ります。デバイスは"00056"で応答し、これは"0M1!"コマンドが測定に5秒かかり、6つの測定値を返すことを意味します。5秒後、デバイスは自身のアドレス"0"で応答し、測定が完了したことを示します。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image53.png></div>
-<p>次に"測定値読み取りコマンド0D0!"を送信して、この測定の6つの測定値を取得します。それらは最小風向345.9度、最大風向347.5度、平均風向346.3度、最小風速2.8m/s、最大風速2.8m/s、平均風速2.8m/sです。</p>
+<p>次に"測定値読み取りコマンド0D0!"を送信して、この測定の6つの測定値を取得します。これらは最小風向345.9度、最大風向347.5度、平均風向346.3度、最小風速2.8m/s、最大風速2.8m/s、平均風速2.8m/sです。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image54.png></div>
 <p>次に"連続測定コマンド0R2!"を送信すると、デバイスは4つの測定値を返します：累積降雨量1.2mm、累積降雨時間20秒、降雨強度1.2mm/h、最大降雨強度72.0mm/h。</p>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image55.png></div>
@@ -306,4 +360,4 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id=sdi-12エラーコード>SDI-12エラーコード<a href=#sdi-12エラーコード class=hash-link aria-label="Direct link to SDI-12エラーコード" title="Direct link to SDI-12エラーコード">​</a></h3>
 <div align=center><img width=600 src=https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image58.png></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id=リソース>リソース<a href=#リソース class=hash-link aria-label="Direct link to リソース" title="Direct link to リソース">​</a></h2>
-<p><a href=https://files.seeedstudio.com/products/SenseCAP/SenseCAP_ONE/SenseCAP_ONE_V3_Compact_Weather_Station_User_Guide_V1.5.pdf target=_blank rel="noopener noreferrer">SenseCAP ONE/SenseCAP ONE V3 Compact Weather Station ユーザーガイド</a></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class=col><a href=https://github.com/Seeed-Studio/wiki-documents/blob/docusaurus-version/docs/ja/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/ja_Tutorials-Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class=theme-last-updated>Last updated<!-- --> on <b><time datetime=2025-11-25T00:00:00.000Z itemprop=dateModified>Nov 25, 2025</time></b> by <b>Michelle Huang</b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/ja/SenseCAP-ONE-Compact-Weather-Station-Introduction/><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>SenseCAP ONE コンパクト気象観測ステーション紹介</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/ja/benchmark_labs_forecast_integration_for_seeed_weather_stations/><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Seeed気象ステーション向けBenchmark Labs予報統合</div></a></nav></div><div>Loading Comments...</div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#インストール class="table-of-contents__link toc-highlight">インストール</a><ul><li><a href=#デバイスインターフェースの紹介 class="table-of-contents__link toc-highlight">デバイスインターフェースの紹介</a><li><a href=#usbケーブルでの接続 class="table-of-contents__link toc-highlight">USBケーブルでの接続</a><li><a href=#m12ケーブル class="table-of-contents__link toc-highlight">M12ケーブル</a><li><a href=#デバイスの設置 class="table-of-contents__link toc-highlight">デバイスの設置</a><li><a href=#usbポート経由でのデバイス設定 class="table-of-contents__link toc-highlight">USBポート経由でのデバイス設定</a><li><a href=#sensecap-one-configuration-tool class="table-of-contents__link toc-highlight">SenseCAP ONE Configuration Tool</a><li><a href=#シリアルデバッグツール class="table-of-contents__link toc-highlight">シリアルデバッグツール</a></ul><li><a href=#modbus-rtuプロトコル class="table-of-contents__link toc-highlight">Modbus-RTUプロトコル</a><ul><li><a href=#modbus-rtuプロトコルメッセージフォーマット class="table-of-contents__link toc-highlight">Modbus-RTUプロトコルメッセージフォーマット</a><li><a href=#レジスタアドレス定義 class="table-of-contents__link toc-highlight">レジスタアドレス定義</a><li><a href=#modbus-rtu-読み取り class="table-of-contents__link toc-highlight">Modbus-RTU 読み取り</a><li><a href=#ノイズセンサー class="table-of-contents__link toc-highlight">ノイズセンサー</a></ul><li><a href=#ascii-プロトコル class="table-of-contents__link toc-highlight">ASCII プロトコル</a><ul><li><a href=#コマンド定義 class="table-of-contents__link toc-highlight">コマンド定義</a><li><a href=#クエリコマンド形式 class="table-of-contents__link toc-highlight">クエリコマンド形式</a><li><a href=#設定コマンド形式 class="table-of-contents__link toc-highlight">設定コマンド形式</a><li><a href=#コマンドリスト class="table-of-contents__link toc-highlight">コマンドリスト</a></ul><li><a href=#sdi-12 class="table-of-contents__link toc-highlight">SDI-12</a><ul><li><a href=#sdi-12-コマンドと応答 class="table-of-contents__link toc-highlight">SDI-12 コマンドと応答</a><li><a href=#sdi-12-読み取り class="table-of-contents__link toc-highlight">SDI-12 読み取り</a></ul><li><a href=#エラーコード class="table-of-contents__link toc-highlight">エラーコード</a><ul><li><a href=#modbusエラーコード class="table-of-contents__link toc-highlight">Modbusエラーコード</a><li><a href=#asciiエラーコード class="table-of-contents__link toc-highlight">ASCIIエラーコード</a><li><a href=#sdi-12エラーコード class="table-of-contents__link toc-highlight">SDI-12エラーコード</a></ul><li><a href=#リソース class="table-of-contents__link toc-highlight">リソース</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>ナビゲーション</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ja/Getting_Started/>はじめに</a><li class=footer__item><a class=footer__link-item href=/ja/Sensor_Network/>センサーとセンシング</a><li class=footer__item><a class=footer__link-item href=/ja/Network/>ネットワーク</a><li class=footer__item><a class=footer__link-item href=/ja/Edge_Computing/>エッジコンピューティング</a><li class=footer__item><a class=footer__link-item href=/ja/Cloud/>クラウド</a><li class=footer__item><a href=https://solution.seeed.cc/ target=_blank rel="noopener noreferrer" class=footer__link-item>ソリューション</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>エコシステム</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://discord.com/invite/QqMgVwHT3X target=_blank rel="noopener noreferrer" class=footer__link-item>Discord</a><li class=footer__item><a href=https://project.seeedstudio.com/ target=_blank rel="noopener noreferrer" class=footer__link-item>プロジェクトハブ</a><li class=footer__item><a href=https://www.seeedstudio.com/ecosystem/ target=_blank rel="noopener noreferrer" class=footer__link-item>パートナー</a><li class=footer__item><a href=https://www.seeedstudio.com/distributors.html target=_blank rel="noopener noreferrer" class=footer__link-item>販売代理店</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>クイックガイド</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.seeedstudio.com/ target=_blank rel="noopener noreferrer" class=footer__link-item>ストア</a><li class=footer__item><a href=https://www.seeedstudio.com/get_help/HowToGetHelp target=_blank rel="noopener noreferrer" class=footer__link-item>ヘルプの受け方</a><li class=footer__item><a href=https://support.seeedstudio.com/knowledgebase target=_blank rel="noopener noreferrer" class=footer__link-item>よくある質問</a><li class=footer__item><a href=https://forum.seeedstudio.com/ target=_blank rel="noopener noreferrer" class=footer__link-item>フォーラム</a><li class=footer__item><a href=https://www.seeedstudio.com/get_help/TechnicalSupport target=_blank rel="noopener noreferrer" class=footer__link-item>技術サポート</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>会社情報</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.seeedstudio.com/about-us/ target=_blank rel="noopener noreferrer" class=footer__link-item>会社概要</a><li class=footer__item><a href=https://www.seeedstudio.com/join-us/ target=_blank rel="noopener noreferrer" class=footer__link-item>採用情報</a><li class=footer__item><a href=https://www.seeedstudio.com/contacts target=_blank rel="noopener noreferrer" class=footer__link-item>お問い合わせ</a><li class=footer__item><a href=https://www.seeedstudio.com/blog/2020/04/22/seeed-in-the-news/ target=_blank rel="noopener noreferrer" class=footer__link-item>プレス</a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2025 Seeed Studio, Inc. Built with Docusaurus.</div></div></div></footer></div>
+<p><a href=https://files.seeedstudio.com/products/SenseCAP/SenseCAP_ONE/SenseCAP_ONE_V3_Compact_Weather_Station_User_Guide_V1.5.pdf target=_blank rel="noopener noreferrer">SenseCAP ONE/SenseCAP ONE V3 コンパクト気象ステーション ユーザーガイド</a></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class=col><a href=https://github.com/Seeed-Studio/wiki-documents/blob/docusaurus-version/docs/ja/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/ja_Tutorials-Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"><span class=theme-last-updated>Last updated<!-- --> on <b><time datetime=2025-12-08T00:00:00.000Z itemprop=dateModified>Dec 8, 2025</time></b> by <b>Janet</b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/ja/SenseCAP-ONE-Compact-Weather-Station-Introduction/><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>SenseCAP ONE コンパクト気象観測ステーション紹介</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/ja/benchmark_labs_forecast_integration_for_seeed_weather_stations/><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Seeed気象ステーション向けBenchmark Labs予報統合</div></a></nav></div><div>Loading Comments...</div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#インストール class="table-of-contents__link toc-highlight">インストール</a><ul><li><a href=#デバイスインターフェースの紹介 class="table-of-contents__link toc-highlight">デバイスインターフェースの紹介</a><li><a href=#usbケーブルでの接続 class="table-of-contents__link toc-highlight">USBケーブルでの接続</a><li><a href=#m12ケーブル class="table-of-contents__link toc-highlight">M12ケーブル</a><li><a href=#デバイスの設置 class="table-of-contents__link toc-highlight">デバイスの設置</a><li><a href=#usbポート経由でのデバイス設定 class="table-of-contents__link toc-highlight">USBポート経由でのデバイス設定</a><li><a href=#sensecap-one-configuration-tool class="table-of-contents__link toc-highlight">SenseCAP ONE Configuration Tool</a><ul><li><a href=#ファームウェアアップグレード class="table-of-contents__link toc-highlight">ファームウェアアップグレード</a></ul><li><a href=#シリアルデバッグツール class="table-of-contents__link toc-highlight">シリアルデバッグツール</a></ul><li><a href=#modbus-rtuプロトコル class="table-of-contents__link toc-highlight">Modbus-RTUプロトコル</a><ul><li><a href=#modbus-rtuプロトコルメッセージフォーマット class="table-of-contents__link toc-highlight">Modbus-RTUプロトコルメッセージフォーマット</a><li><a href=#レジスタアドレス定義 class="table-of-contents__link toc-highlight">レジスタアドレス定義</a><li><a href=#modbus-rtu読み取り class="table-of-contents__link toc-highlight">Modbus-RTU読み取り</a><li><a href=#ノイズセンサー class="table-of-contents__link toc-highlight">ノイズセンサー</a></ul><li><a href=#asciiプロトコル class="table-of-contents__link toc-highlight">ASCIIプロトコル</a><ul><li><a href=#コマンド定義 class="table-of-contents__link toc-highlight">コマンド定義</a><li><a href=#クエリコマンド形式 class="table-of-contents__link toc-highlight">クエリコマンド形式</a><li><a href=#��設定コマンド形式 class="table-of-contents__link toc-highlight">設定コマンド形式</a><li><a href=#コマンドリスト class="table-of-contents__link toc-highlight">コマンドリスト</a></ul><li><a href=#sdi-12 class="table-of-contents__link toc-highlight">SDI-12</a><ul><li><a href=#sdi-12コマンドと応答 class="table-of-contents__link toc-highlight">SDI-12コマンドと応答</a><li><a href=#sdi-12読み取り class="table-of-contents__link toc-highlight">SDI-12読み取り</a></ul><li><a href=#エラーコード class="table-of-contents__link toc-highlight">エラーコード</a><ul><li><a href=#modbusエラーコード class="table-of-contents__link toc-highlight">Modbusエラーコード</a><li><a href=#asciiエラーコード class="table-of-contents__link toc-highlight">ASCIIエラーコード</a><li><a href=#sdi-12エラーコード class="table-of-contents__link toc-highlight">SDI-12エラーコード</a></ul><li><a href=#リソース class="table-of-contents__link toc-highlight">リソース</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>ナビゲーション</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/ja/Getting_Started/>はじめに</a><li class=footer__item><a class=footer__link-item href=/ja/Sensor_Network/>センサーとセンシング</a><li class=footer__item><a class=footer__link-item href=/ja/Network/>ネットワーク</a><li class=footer__item><a class=footer__link-item href=/ja/Edge_Computing/>エッジコンピューティング</a><li class=footer__item><a class=footer__link-item href=/ja/Cloud/>クラウド</a><li class=footer__item><a href=https://solution.seeed.cc/ target=_blank rel="noopener noreferrer" class=footer__link-item>ソリューション</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>エコシステム</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://discord.com/invite/QqMgVwHT3X target=_blank rel="noopener noreferrer" class=footer__link-item>Discord</a><li class=footer__item><a href=https://project.seeedstudio.com/ target=_blank rel="noopener noreferrer" class=footer__link-item>プロジェクトハブ</a><li class=footer__item><a href=https://www.seeedstudio.com/ecosystem/ target=_blank rel="noopener noreferrer" class=footer__link-item>パートナー</a><li class=footer__item><a href=https://www.seeedstudio.com/distributors.html target=_blank rel="noopener noreferrer" class=footer__link-item>販売代理店</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>クイックガイド</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.seeedstudio.com/ target=_blank rel="noopener noreferrer" class=footer__link-item>ストア</a><li class=footer__item><a href=https://www.seeedstudio.com/get_help/HowToGetHelp target=_blank rel="noopener noreferrer" class=footer__link-item>ヘルプの受け方</a><li class=footer__item><a href=https://support.seeedstudio.com/knowledgebase target=_blank rel="noopener noreferrer" class=footer__link-item>よくある質問</a><li class=footer__item><a href=https://forum.seeedstudio.com/ target=_blank rel="noopener noreferrer" class=footer__link-item>フォーラム</a><li class=footer__item><a href=https://www.seeedstudio.com/get_help/TechnicalSupport target=_blank rel="noopener noreferrer" class=footer__link-item>技術サポート</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>会社情報</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.seeedstudio.com/about-us/ target=_blank rel="noopener noreferrer" class=footer__link-item>会社概要</a><li class=footer__item><a href=https://www.seeedstudio.com/join-us/ target=_blank rel="noopener noreferrer" class=footer__link-item>採用情報</a><li class=footer__item><a href=https://www.seeedstudio.com/contacts target=_blank rel="noopener noreferrer" class=footer__link-item>お問い合わせ</a><li class=footer__item><a href=https://www.seeedstudio.com/blog/2020/04/22/seeed-in-the-news/ target=_blank rel="noopener noreferrer" class=footer__link-item>プレス</a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2025 Seeed Studio, Inc. Built with Docusaurus.</div></div></div></footer></div>
