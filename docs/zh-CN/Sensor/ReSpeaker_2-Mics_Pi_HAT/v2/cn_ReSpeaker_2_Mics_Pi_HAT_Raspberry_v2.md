@@ -6,8 +6,8 @@ keywords:
 image: https://files.seeedstudio.com/wiki/ReSpeaker_2_Mics_Pi_HAT/social-image.webp
 slug: /cn/respeaker_2_mics_pi_hat_raspberry_v2
 last_update:
-  date: 04/18/2025
-  author: Jiahao
+  date: 01/28/2026
+  author: Mingxi
 ---
 
 :::caution
@@ -87,21 +87,17 @@ dmesg | grep tlv320
 </details>
 
 
-- 步骤1：获取ReSpeaker 2-Mics Pi HAT (V2.0)的设备树源文件(DTS)，编译并安装设备树覆盖。
+- 步骤1：获取ReSpeaker 2-Mics Pi HAT (V2.0)的设备树源文件(DTS)，编译并安装设备树覆盖，之后重启使设置生效
 
 ```bash
-curl https://raw.githubusercontent.com/Seeed-Studio/seeed-linux-dtoverlays/refs/heads/master/overlays/rpi/respeaker-2mic-v2_0-overlay.dts -o respeaker-2mic-v2_0-overlay.dts
-dtc -I dts respeaker-2mic-v2_0-overlay.dts -o respeaker-2mic-v2_0-overlay.dtbo
-sudo dtoverlay respeaker-2mic-v2_0-overlay.dtbo
-sudo cp respeaker-2mic-v2_0-overlay.dtbo /boot/firmware/overlays
+git clone https://github.com/Seeed-Studio/seeed-linux-dtoverlays.git  
+cd seeed-linux-dtoverlays/  
+make overlays/rpi/respeaker-2mic-v2_0-overlay.dtbo  
+sudo cp overlays/rpi/respeaker-2mic-v2_0-overlay.dtbo /boot/firmware/overlays/respeaker-2mic-v2_0.dtbo  
+echo "dtoverlay=respeaker-2mic-v2_0" | sudo tee -a /boot/firmware/config.txt  
+sudo reboot
 ```
 
-- 步骤2：编辑`/boot/firmware/config.txt`并添加以下行：
-
-```
-dtoverlay=respeaker-2mic-v2_0-overlay
-dtoverlay=i2s-mmap
-```
 
 > **注意：** 如果您的内核版本大于4.0，则不需要添加`dtoverlay=i2s-mmap`。
 
